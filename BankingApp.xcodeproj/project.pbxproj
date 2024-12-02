@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		CA86FD3A2CDF66350076643E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD392CDF66350076643E /* AppDelegate.swift */; };
 		CA86FD3C2CDF66350076643E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD3B2CDF66350076643E /* SceneDelegate.swift */; };
-		CA86FD3E2CDF66350076643E /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FD3D2CDF66350076643E /* RegisterController.swift */; };
 		CA86FD432CDF66370076643E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA86FD422CDF66370076643E /* Assets.xcassets */; };
 		CA86FD462CDF66370076643E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = CA86FD452CDF66370076643E /* Base */; };
-		CA86FDAA2CE5B8F50076643E /* CoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FDA92CE5B8F50076643E /* CoreController.swift */; };
-		CA86FDB02CE653180076643E /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FDAF2CE653180076643E /* TestController.swift */; };
-		CA86FDB22CE653710076643E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FDB12CE653710076643E /* LoginController.swift */; };
 		CA86FDFA2CEAFC4B0076643E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA86FDF92CEAFC4B0076643E /* RealmSwift */; };
 		CA86FDFD2CEB8CF10076643E /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FDFC2CEB8CF10076643E /* Validations.swift */; };
-		CA86FE012CEB8E740076643E /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FE002CEB8E740076643E /* AuthViewModel.swift */; };
-		CA86FE032CEB8F180076643E /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86FE022CEB8F180076643E /* UserDTO.swift */; };
+		CAD981542CFB14ED0071FEBF /* ReusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981532CFB14ED0071FEBF /* ReusableButton.swift */; };
+		CAD981562CFB157A0071FEBF /* ReusableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981552CFB157A0071FEBF /* ReusableLabel.swift */; };
+		CAD981582CFB15A70071FEBF /* ReusableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981572CFB15A70071FEBF /* ReusableText.swift */; };
+		CAD9815B2CFB16B90071FEBF /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9815A2CFB16B90071FEBF /* RealmHelper.swift */; };
+		CAD981622CFD5F5D0071FEBF /* CoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981612CFD5F5D0071FEBF /* CoreController.swift */; };
+		CAD981642CFD5F920071FEBF /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981632CFD5F920071FEBF /* LoginController.swift */; };
+		CAD981662CFD5FCB0071FEBF /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981652CFD5FCB0071FEBF /* RegisterController.swift */; };
+		CAD981682CFD60120071FEBF /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981672CFD60120071FEBF /* TestController.swift */; };
+		CAD9816A2CFD605F0071FEBF /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981692CFD605F0071FEBF /* UserDTO.swift */; };
+		CAD9816D2CFD60B50071FEBF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,18 +46,22 @@
 		CA86FD362CDF66350076643E /* BankingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA86FD392CDF66350076643E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA86FD3B2CDF66350076643E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA86FD3D2CDF66350076643E /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		CA86FD422CDF66370076643E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA86FD452CDF66370076643E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA86FD472CDF66370076643E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA86FD4C2CDF66370076643E /* BankingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA86FD562CDF66370076643E /* BankingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA86FDA92CE5B8F50076643E /* CoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreController.swift; sourceTree = "<group>"; };
-		CA86FDAF2CE653180076643E /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
-		CA86FDB12CE653710076643E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CA86FDFC2CEB8CF10076643E /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
-		CA86FE002CEB8E740076643E /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		CA86FE022CEB8F180076643E /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		CAD981532CFB14ED0071FEBF /* ReusableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableButton.swift; sourceTree = "<group>"; };
+		CAD981552CFB157A0071FEBF /* ReusableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableLabel.swift; sourceTree = "<group>"; };
+		CAD981572CFB15A70071FEBF /* ReusableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableText.swift; sourceTree = "<group>"; };
+		CAD9815A2CFB16B90071FEBF /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		CAD981612CFD5F5D0071FEBF /* CoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreController.swift; sourceTree = "<group>"; };
+		CAD981632CFD5F920071FEBF /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CAD981652CFD5FCB0071FEBF /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CAD981672CFD60120071FEBF /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		CAD981692CFD605F0071FEBF /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,22 +90,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CA7D6BA02CEC475700E5BB7A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CA86FE022CEB8F180076643E /* UserDTO.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CA7D6BA12CEC476F00E5BB7A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				CA86FE002CEB8E740076643E /* AuthViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CA86FD2D2CDF66350076643E = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +111,12 @@
 		CA86FD382CDF66350076643E /* BankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				CAD9816B2CFD60A70071FEBF /* Models */,
+				CAD9815E2CFB1A3B0071FEBF /* Core */,
+				CAD9815D2CFB1A1F0071FEBF /* Business */,
+				CAD981592CFB167A0071FEBF /* Helper */,
+				CAD981522CFB14B00071FEBF /* ReusableCodes */,
 				CA86FDAB2CE650190076643E /* App */,
-				CA86FDFE2CEB8D830076643E /* Business */,
 				CA86FDF12CE855DF0076643E /* Extensions */,
 				CA86FDFB2CEB8C3E0076643E /* Resources */,
 				CA86FD472CDF66370076643E /* Info.plist */,
@@ -135,31 +131,6 @@
 				CA86FD3B2CDF66350076643E /* SceneDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		CA86FDAC2CE650C60076643E /* Sign Up */ = {
-			isa = PBXGroup;
-			children = (
-				CA86FD3D2CDF66350076643E /* RegisterController.swift */,
-				CA86FDAF2CE653180076643E /* TestController.swift */,
-			);
-			path = "Sign Up";
-			sourceTree = "<group>";
-		};
-		CA86FDAD2CE650EC0076643E /* Sign In */ = {
-			isa = PBXGroup;
-			children = (
-				CA86FDB12CE653710076643E /* LoginController.swift */,
-			);
-			path = "Sign In";
-			sourceTree = "<group>";
-		};
-		CA86FDAE2CE651F70076643E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				CA86FDA92CE5B8F50076643E /* CoreController.swift */,
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		CA86FDF12CE855DF0076643E /* Extensions */ = {
@@ -179,24 +150,65 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CA86FDFE2CEB8D830076643E /* Business */ = {
+		CAD981522CFB14B00071FEBF /* ReusableCodes */ = {
 			isa = PBXGroup;
 			children = (
-				CA86FDFF2CEB8DFB0076643E /* Auth */,
-				CA86FDAE2CE651F70076643E /* Core */,
+				CAD981532CFB14ED0071FEBF /* ReusableButton.swift */,
+				CAD981552CFB157A0071FEBF /* ReusableLabel.swift */,
+				CAD981572CFB15A70071FEBF /* ReusableText.swift */,
+			);
+			path = ReusableCodes;
+			sourceTree = "<group>";
+		};
+		CAD981592CFB167A0071FEBF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9815A2CFB16B90071FEBF /* RealmHelper.swift */,
+				CAD981692CFD605F0071FEBF /* UserDTO.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CAD9815D2CFB1A1F0071FEBF /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				CAD981602CFB1A580071FEBF /* Sign in */,
+				CAD9815F2CFB1A4B0071FEBF /* Sign up */,
 			);
 			path = Business;
 			sourceTree = "<group>";
 		};
-		CA86FDFF2CEB8DFB0076643E /* Auth */ = {
+		CAD9815E2CFB1A3B0071FEBF /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CA7D6BA12CEC476F00E5BB7A /* ViewModel */,
-				CA7D6BA02CEC475700E5BB7A /* Models */,
-				CA86FDAC2CE650C60076643E /* Sign Up */,
-				CA86FDAD2CE650EC0076643E /* Sign In */,
+				CAD981612CFD5F5D0071FEBF /* CoreController.swift */,
 			);
-			path = Auth;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CAD9815F2CFB1A4B0071FEBF /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				CAD981652CFD5FCB0071FEBF /* RegisterController.swift */,
+				CAD981672CFD60120071FEBF /* TestController.swift */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		CAD981602CFB1A580071FEBF /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				CAD981632CFD5F920071FEBF /* LoginController.swift */,
+			);
+			path = "Sign in";
+			sourceTree = "<group>";
+		};
+		CAD9816B2CFD60A70071FEBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,15 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA86FDB02CE653180076643E /* TestController.swift in Sources */,
-				CA86FDB22CE653710076643E /* LoginController.swift in Sources */,
+				CAD981662CFD5FCB0071FEBF /* RegisterController.swift in Sources */,
+				CAD981562CFB157A0071FEBF /* ReusableLabel.swift in Sources */,
 				CA86FDFD2CEB8CF10076643E /* Validations.swift in Sources */,
-				CA86FD3E2CDF66350076643E /* RegisterController.swift in Sources */,
-				CA86FE012CEB8E740076643E /* AuthViewModel.swift in Sources */,
+				CAD981682CFD60120071FEBF /* TestController.swift in Sources */,
 				CA86FD3A2CDF66350076643E /* AppDelegate.swift in Sources */,
+				CAD981542CFB14ED0071FEBF /* ReusableButton.swift in Sources */,
+				CAD9816A2CFD605F0071FEBF /* UserDTO.swift in Sources */,
+				CAD981642CFD5F920071FEBF /* LoginController.swift in Sources */,
+				CAD981622CFD5F5D0071FEBF /* CoreController.swift in Sources */,
 				CA86FD3C2CDF66350076643E /* SceneDelegate.swift in Sources */,
-				CA86FE032CEB8F180076643E /* UserDTO.swift in Sources */,
-				CA86FDAA2CE5B8F50076643E /* CoreController.swift in Sources */,
+				CAD981582CFB15A70071FEBF /* ReusableText.swift in Sources */,
+				CAD9816D2CFD60B50071FEBF /* AuthViewModel.swift in Sources */,
+				CAD9815B2CFB16B90071FEBF /* RealmHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

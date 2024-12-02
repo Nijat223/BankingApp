@@ -2,7 +2,7 @@
 //  UserDTO.swift
 //  BankingApp
 //
-//  Created by Nijat Shikhaliyev on 18.11.24.
+//  Created by Nijat Shikhaliyev on 02.12.24.
 //
 
 import Foundation

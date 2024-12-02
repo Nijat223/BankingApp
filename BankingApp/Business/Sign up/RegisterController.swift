@@ -2,7 +2,7 @@
 //  RegisterController.swift
 //  BankingApp
 //
-//  Created by Nijat Shikhaliyev on 09.11.24.
+//  Created by Nijat Shikhaliyev on 02.12.24.
 //
 
 import UIKit
@@ -190,3 +190,4 @@ extension RegisterController: UITextFieldDelegate {
         viewModel.password = password
     }
 }
+
