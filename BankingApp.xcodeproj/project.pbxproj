@@ -23,6 +23,17 @@
 		CAD981682CFD60120071FEBF /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981672CFD60120071FEBF /* TestController.swift */; };
 		CAD9816A2CFD605F0071FEBF /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981692CFD605F0071FEBF /* UserDTO.swift */; };
 		CAD9816D2CFD60B50071FEBF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */; };
+		CAD981702CFD628C0071FEBF /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9816F2CFD628C0071FEBF /* CardCell.swift */; };
+		CAD981732CFD62E70071FEBF /* CardListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981722CFD62E70071FEBF /* CardListController.swift */; };
+		CAD981752CFD633E0071FEBF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981742CFD633E0071FEBF /* MainController.swift */; };
+		CAD981772CFD636D0071FEBF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981762CFD636D0071FEBF /* TabBarController.swift */; };
+		CAD981792CFD63900071FEBF /* TransferController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981782CFD63900071FEBF /* TransferController.swift */; };
+		CAD9817B2CFD64040071FEBF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9817A2CFD64040071FEBF /* CardModel.swift */; };
+		CAD9817E2CFD64430071FEBF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9817D2CFD64430071FEBF /* MainViewModel.swift */; };
+		CAD981802CFD64690071FEBF /* TransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9817F2CFD64690071FEBF /* TransferViewModel.swift */; };
+		CAD981822CFE0BB30071FEBF /* CardTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981812CFE0BB30071FEBF /* CardTable.swift */; };
+		CAD981862CFF70CE0071FEBF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981852CFF70CE0071FEBF /* ProfileController.swift */; };
+		CAD981882CFF72860071FEBF /* ReusableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981872CFF72860071FEBF /* ReusableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +73,17 @@
 		CAD981672CFD60120071FEBF /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
 		CAD981692CFD605F0071FEBF /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
 		CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CAD9816F2CFD628C0071FEBF /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		CAD981722CFD62E70071FEBF /* CardListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListController.swift; sourceTree = "<group>"; };
+		CAD981742CFD633E0071FEBF /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		CAD981762CFD636D0071FEBF /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CAD981782CFD63900071FEBF /* TransferController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferController.swift; sourceTree = "<group>"; };
+		CAD9817A2CFD64040071FEBF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		CAD9817D2CFD64430071FEBF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CAD9817F2CFD64690071FEBF /* TransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewModel.swift; sourceTree = "<group>"; };
+		CAD981812CFE0BB30071FEBF /* CardTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTable.swift; sourceTree = "<group>"; };
+		CAD981852CFF70CE0071FEBF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		CAD981872CFF72860071FEBF /* ReusableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +133,8 @@
 		CA86FD382CDF66350076643E /* BankingApp */ = {
 			isa = PBXGroup;
 			children = (
+				CAD981712CFD62CA0071FEBF /* Controller */,
+				CAD9816E2CFD624D0071FEBF /* Cell */,
 				CAD9816B2CFD60A70071FEBF /* Models */,
 				CAD9815E2CFB1A3B0071FEBF /* Core */,
 				CAD9815D2CFB1A1F0071FEBF /* Business */,
@@ -155,6 +179,7 @@
 			children = (
 				CAD981532CFB14ED0071FEBF /* ReusableButton.swift */,
 				CAD981552CFB157A0071FEBF /* ReusableLabel.swift */,
+				CAD981872CFF72860071FEBF /* ReusableImageView.swift */,
 				CAD981572CFB15A70071FEBF /* ReusableText.swift */,
 			);
 			path = ReusableCodes;
@@ -206,9 +231,41 @@
 		CAD9816B2CFD60A70071FEBF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */,
+				CAD9817A2CFD64040071FEBF /* CardModel.swift */,
+				CAD9817C2CFD64250071FEBF /* ViewModels */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAD9816E2CFD624D0071FEBF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9816F2CFD628C0071FEBF /* CardCell.swift */,
+				CAD981812CFE0BB30071FEBF /* CardTable.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CAD981712CFD62CA0071FEBF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CAD981722CFD62E70071FEBF /* CardListController.swift */,
+				CAD981742CFD633E0071FEBF /* MainController.swift */,
+				CAD981762CFD636D0071FEBF /* TabBarController.swift */,
+				CAD981782CFD63900071FEBF /* TransferController.swift */,
+				CAD981852CFF70CE0071FEBF /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CAD9817C2CFD64250071FEBF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */,
+				CAD9817D2CFD64430071FEBF /* MainViewModel.swift */,
+				CAD9817F2CFD64690071FEBF /* TransferViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,18 +404,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAD981822CFE0BB30071FEBF /* CardTable.swift in Sources */,
 				CAD981662CFD5FCB0071FEBF /* RegisterController.swift in Sources */,
 				CAD981562CFB157A0071FEBF /* ReusableLabel.swift in Sources */,
 				CA86FDFD2CEB8CF10076643E /* Validations.swift in Sources */,
 				CAD981682CFD60120071FEBF /* TestController.swift in Sources */,
+				CAD981802CFD64690071FEBF /* TransferViewModel.swift in Sources */,
 				CA86FD3A2CDF66350076643E /* AppDelegate.swift in Sources */,
+				CAD9817B2CFD64040071FEBF /* CardModel.swift in Sources */,
 				CAD981542CFB14ED0071FEBF /* ReusableButton.swift in Sources */,
+				CAD981862CFF70CE0071FEBF /* ProfileController.swift in Sources */,
+				CAD981772CFD636D0071FEBF /* TabBarController.swift in Sources */,
+				CAD981882CFF72860071FEBF /* ReusableImageView.swift in Sources */,
 				CAD9816A2CFD605F0071FEBF /* UserDTO.swift in Sources */,
+				CAD981702CFD628C0071FEBF /* CardCell.swift in Sources */,
+				CAD981752CFD633E0071FEBF /* MainController.swift in Sources */,
 				CAD981642CFD5F920071FEBF /* LoginController.swift in Sources */,
 				CAD981622CFD5F5D0071FEBF /* CoreController.swift in Sources */,
+				CAD981792CFD63900071FEBF /* TransferController.swift in Sources */,
 				CA86FD3C2CDF66350076643E /* SceneDelegate.swift in Sources */,
+				CAD9817E2CFD64430071FEBF /* MainViewModel.swift in Sources */,
 				CAD981582CFB15A70071FEBF /* ReusableText.swift in Sources */,
 				CAD9816D2CFD60B50071FEBF /* AuthViewModel.swift in Sources */,
+				CAD981732CFD62E70071FEBF /* CardListController.swift in Sources */,
 				CAD9815B2CFB16B90071FEBF /* RealmHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

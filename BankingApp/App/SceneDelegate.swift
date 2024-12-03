@@ -11,7 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    private var isLogin: Bool = false
+    private var isLogin: Bool = true
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -29,7 +29,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func showRegister(scene: UIWindowScene) -> UIWindow  {
-        let controller = LoginController(viewModel: .init())
+        let controller = RegisterController(viewModel: .init())
         let navigationController = UINavigationController(rootViewController: controller)
         let newWindow = UIWindow(windowScene: scene)
         newWindow.rootViewController = navigationController

@@ -142,3 +142,58 @@ extension UICollectionViewCell {
         view.addGestureRecognizer(tapGesture)
     }
 }
+
+extension UIView {
+    func addViews(view:[UIView]){
+        view.forEach {self.addSubview($0)}
+    }
+}
+
+extension String {
+    static func generateRandomCardNumber(isVisa: Bool) -> String {
+        let startDigit = isVisa ? "4" : "5"
+                var cardNumber = startDigit
+                for _ in 1..<16 {
+                    let randomDigit = Int.random(in: 0...9)
+                    cardNumber += "\(randomDigit)"
+                }
+                var formattedCardNumber = ""
+                for (index, character) in cardNumber.enumerated() {
+                    formattedCardNumber.append(character)
+                    if (index + 1) % 4 == 0 && index != 15 {
+                        formattedCardNumber.append("-")
+                    }
+                }
+                
+                return formattedCardNumber
+            }
+}
+
+
+extension String {
+    static func generateCardExpiryDate() -> String {
+        let calendar = Calendar.current
+        let currentDate = Date()
+        if let expiryDate = calendar.date(byAdding: .year, value: 3, to: currentDate) {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM/yy"
+            return dateFormatter.string(from: expiryDate)
+        }
+        return "Invalid Date"
+    }
+}
+
+
+extension String {
+    static func generateRandomAzn () -> Int {
+        let randomAmount = Int.random(in: 10...30)
+               return randomAmount
+    }
+}
+
+extension String {
+    static func generateCVV () -> Int {
+        let randomAmount = Int.random(in: 0...999)
+               return randomAmount
+    }
+}
