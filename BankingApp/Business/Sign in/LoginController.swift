@@ -161,6 +161,11 @@ class LoginController: CoreController {
         guard let pass = passwordField.text else {return}
         viewModel.loggedEmail = email
         viewModel.loggedPass = pass
+        if let customer = viewModel.Users?.first(where: { $0.email == email }) {
+                      UserDefaults.standard.set(customer.name, forKey: "firstName")
+                      UserDefaults.standard.set(customer.surname, forKey: "lastName")
+                      UserDefaults.standard.set(customer.email, forKey: "email")
+                }
         if viewModel.checkUser() == true {
             let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
             scene?.switchToMain()
@@ -173,3 +178,4 @@ class LoginController: CoreController {
     extension LoginController: UITextFieldDelegate {
       
     }
+

@@ -11,7 +11,7 @@ class ProfileController: CoreController {
     
     
     private lazy var logoutImage: ReusableImageView = {
-        let i = ReusableImageView(imageName: "Screenshot 2024-11-15 at 07.56.41", contentMode: .scaleAspectFill, cornerRadius: 10)
+        let i = ReusableImageView(imageName: "16600462253477164630_1200x630", contentMode: .scaleAspectFill, cornerRadius: 20)
         return i
     }()
     
@@ -24,20 +24,13 @@ class ProfileController: CoreController {
     }()
     
     private lazy var lastNameLabel: ReusableLabel = {
-        let l = ReusableLabel(title: "Lastname", size: 12)
+        let l = ReusableLabel(title: "Surname", size: 12)
         l.backgroundColor = .white.withAlphaComponent(0.2)
         l.translatesAutoresizingMaskIntoConstraints = false
 
         return l
     }()
     
-    private lazy var phoneNumber: ReusableLabel = {
-        let l = ReusableLabel(title: "Phone", size: 12)
-        l.translatesAutoresizingMaskIntoConstraints = false
-
-        l.backgroundColor = .white.withAlphaComponent(0.2)
-        return l
-    }()
     
     private lazy var emailLabel: ReusableLabel = {
         let l = ReusableLabel(title: "Email", size: 12)
@@ -58,9 +51,6 @@ class ProfileController: CoreController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let phone = UserDefaults.standard.string(forKey: "phone") {
-               phoneNumber.text = "  Phone: " + phone
-           }
         
         if let email = UserDefaults.standard.string(forKey: "email") {
                emailLabel.text = "  Email: " + email
@@ -104,7 +94,7 @@ class ProfileController: CoreController {
     
     override func configureView() {
         super.configureView()
-        view.addViews(view: [logOutButton, logoutImage, nameLabel, lastNameLabel, phoneNumber, emailLabel])
+        view.addViews(view: [logOutButton, logoutImage, nameLabel, lastNameLabel, emailLabel])
     }
     
  
@@ -119,10 +109,10 @@ class ProfileController: CoreController {
         ])
         
         NSLayoutConstraint.activate([
-            logoutImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 144),
+            logoutImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 140),
             logoutImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoutImage.heightAnchor.constraint(equalToConstant: 160),
-            logoutImage.widthAnchor.constraint(equalToConstant: 160)
+            logoutImage.heightAnchor.constraint(equalToConstant: 180),
+            logoutImage.widthAnchor.constraint(equalToConstant: 300)
         ])
         
         NSLayoutConstraint.activate([
@@ -138,16 +128,10 @@ class ProfileController: CoreController {
             lastNameLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24),
             lastNameLabel.heightAnchor.constraint(equalToConstant: 36)
         ])
+    
         
         NSLayoutConstraint.activate([
-            phoneNumber.topAnchor.constraint(equalTo: lastNameLabel.bottomAnchor, constant: 24),
-            phoneNumber.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24),
-            phoneNumber.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24),
-            phoneNumber.heightAnchor.constraint(equalToConstant: 36)
-        ])
-        
-        NSLayoutConstraint.activate([
-            emailLabel.topAnchor.constraint(equalTo: phoneNumber.bottomAnchor, constant: 24),
+            emailLabel.topAnchor.constraint(equalTo: lastNameLabel.bottomAnchor, constant: 24),
             emailLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24),
             emailLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24),
             emailLabel.heightAnchor.constraint(equalToConstant: 36)

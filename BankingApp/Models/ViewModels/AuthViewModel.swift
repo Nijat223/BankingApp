@@ -17,7 +17,7 @@ final class AuthViewModel {
     
     var callback: ((ViewState) -> Void)?
     private let realm = try!Realm()
-    private var Users: Results<UserDTO>?
+     var Users: Results<UserDTO>?
     lazy var surname = String()
     lazy var name  = String()
     lazy var email = String()
