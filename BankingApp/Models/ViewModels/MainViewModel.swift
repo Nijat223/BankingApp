@@ -11,6 +11,7 @@ import RealmSwift
 final class MainViewModel {
     enum ViewState {
         case error(message:String)
+        case succcess
     }
     
     var cards: Results<Card>?
@@ -39,6 +40,7 @@ final class MainViewModel {
         try! realm.write {
             realm.delete(card)
         }
+        callback?(.succcess)
     }
     func showMessage(message: String) {
         callback?(.error(message: message))
@@ -65,6 +67,7 @@ final class MainViewModel {
         writeRealm(model: card)
         getList()
         isVisa = Bool.random()
+        callback?(.succcess)
     }
 }
 

@@ -131,6 +131,7 @@ class MainController: CoreController {
             switch state {
             case .error(let message):
                 self?.showMessage(title: message)
+            case .succcess: self?.collectionViewReload()
             }
         }
     }
@@ -142,7 +143,6 @@ class MainController: CoreController {
   
     @objc func addCardClicked() {
         viewModel.createCard()
-        collectionViewReload()
         
     }
     @objc func deleteCardClicked() {

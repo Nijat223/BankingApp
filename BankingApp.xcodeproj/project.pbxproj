@@ -34,6 +34,9 @@
 		CAD981822CFE0BB30071FEBF /* CardTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981812CFE0BB30071FEBF /* CardTable.swift */; };
 		CAD981862CFF70CE0071FEBF /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981852CFF70CE0071FEBF /* ProfileController.swift */; };
 		CAD981882CFF72860071FEBF /* ReusableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD981872CFF72860071FEBF /* ReusableImageView.swift */; };
+		CAD9818C2CFF92970071FEBF /* CardSelectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9818B2CFF92970071FEBF /* CardSelectController.swift */; };
+		CAD9818E2CFF93850071FEBF /* CardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9818D2CFF93850071FEBF /* CardTableCell.swift */; };
+		CAD981902D0003D40071FEBF /* CardSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD9818F2D0003D40071FEBF /* CardSelectViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		CAD981812CFE0BB30071FEBF /* CardTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTable.swift; sourceTree = "<group>"; };
 		CAD981852CFF70CE0071FEBF /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		CAD981872CFF72860071FEBF /* ReusableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableImageView.swift; sourceTree = "<group>"; };
+		CAD9818B2CFF92970071FEBF /* CardSelectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectController.swift; sourceTree = "<group>"; };
+		CAD9818D2CFF93850071FEBF /* CardTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableCell.swift; sourceTree = "<group>"; };
+		CAD9818F2D0003D40071FEBF /* CardSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,7 @@
 		CAD9816E2CFD624D0071FEBF /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				CAD9818D2CFF93850071FEBF /* CardTableCell.swift */,
 				CAD9816F2CFD628C0071FEBF /* CardCell.swift */,
 				CAD981812CFE0BB30071FEBF /* CardTable.swift */,
 			);
@@ -250,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				CAD981722CFD62E70071FEBF /* CardListController.swift */,
+				CAD9818B2CFF92970071FEBF /* CardSelectController.swift */,
 				CAD981742CFD633E0071FEBF /* MainController.swift */,
 				CAD981762CFD636D0071FEBF /* TabBarController.swift */,
 				CAD981782CFD63900071FEBF /* TransferController.swift */,
@@ -264,6 +272,7 @@
 				CAD9816C2CFD60B50071FEBF /* AuthViewModel.swift */,
 				CAD9817D2CFD64430071FEBF /* MainViewModel.swift */,
 				CAD9817F2CFD64690071FEBF /* TransferViewModel.swift */,
+				CAD9818F2D0003D40071FEBF /* CardSelectViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -413,8 +422,11 @@
 				CA86FD3A2CDF66350076643E /* AppDelegate.swift in Sources */,
 				CAD9817B2CFD64040071FEBF /* CardModel.swift in Sources */,
 				CAD981542CFB14ED0071FEBF /* ReusableButton.swift in Sources */,
+				CAD9818C2CFF92970071FEBF /* CardSelectController.swift in Sources */,
+				CAD9818E2CFF93850071FEBF /* CardTableCell.swift in Sources */,
 				CAD981862CFF70CE0071FEBF /* ProfileController.swift in Sources */,
 				CAD981772CFD636D0071FEBF /* TabBarController.swift in Sources */,
+				CAD981902D0003D40071FEBF /* CardSelectViewModel.swift in Sources */,
 				CAD981882CFF72860071FEBF /* ReusableImageView.swift in Sources */,
 				CAD9816A2CFD605F0071FEBF /* UserDTO.swift in Sources */,
 				CAD981702CFD628C0071FEBF /* CardCell.swift in Sources */,
